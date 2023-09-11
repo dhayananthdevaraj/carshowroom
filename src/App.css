@@ -1,38 +1,73 @@
-.App {
+/* Header.css */
+
+.header {
+  background-color: #007bff; /* Header background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding around the header */
+  text-align: center; /* Center align text horizontally */
+}
+
+.header-title {
+  font-size: 24px; /* Font size of the title */
+  margin: 0; /* Remove default margin */
+}
+
+/* CarList.css */
+
+.car-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Distribute items evenly with space between */
+  max-width: 1200px; /* Maximum width for the row, adjust as needed */
+  width: 100%; /* Take up the full width of the container */
+}
+
+.car-cards {
+  flex: 0 0 calc(33.33% - 20px); /* Set the desired card width for three cards in a row */
+  margin: 10px;
+  padding: 20px; /* Increase padding for larger card size */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.car-cards img {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.car-cards h3 {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.car-cards p {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Car.css */
+
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.car-detail {
+  font-size: 14px;
+  margin: 5px 0;
 }
